@@ -1,0 +1,11 @@
+import play from './images/play.svg'
+import tick from './images/tick.svg'
+import headerbg from './images/headerbg.svg'
+import integration1 from './images/integration1.svg'
+import integration2 from './images/integration2.svg'
+import integration3 from './images/integration3.svg'
+import analytics1 from './images/analytics1.svg'
+import analytics2 from './images/analytics2.svg'
+import analytics3 from './images/analytics3.svg'
+import trial from './images/Trial.svg'
+export {play,tick,integration1,integration2,integration3,analytics1,analytics2,analytics3,trial,headerbg}

@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+a,
+a img,
+input,
+input:active,
+input:focus,
+textarea:focus,
+select:focus,
+button:focus {
+  outline: none !important;
+  outline-color: transparent !important;
+  outline-width: 0 !important;
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  outline: none;
+}
+
+@layer components {
+  .main-container {
+    @apply w-full px-[30px] py-[40px];
+  }
+
+  .big-container {
+    @apply max-w-[1360px] mx-auto 2xl:container;
+  }
+
+  .small-container {
+    @apply max-w-7xl mx-auto;
+  }
+}
