@@ -1,0 +1,45 @@
+.carousel__slider__item {
+  width: 100%; /* Full width of its parent */
+  max-width: 300px; /* Maximum width can be adjusted based on your design */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.item__3d-frame {
+  transform-style: preserve-3d;
+  transition: transform 1s ease-in-out;
+}
+
+.item__3d-frame__box {
+  transition: transform 1s ease-in-out;
+  transform: rotateY(0deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid white;
+}
+button {
+  position: absolute;
+  top: 50%; /* Center vertically */
+  transform: translateY(-50%); /* Align center with the item */
+  z-index: 100; /* Ensure they are above other content */
+}
+
+.left-2 {
+  left: 10px; /* Slight left offset */
+}
+
+.right-2 {
+  right: 10px; /* Slight right offset */
+}
+@media (max-width: 768px) {
+  .carousel__slider__item {
+    max-width: 100%; /* Full width on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  button {
+    padding: 5px;
+    font-size: 12px;
+  }
+}
